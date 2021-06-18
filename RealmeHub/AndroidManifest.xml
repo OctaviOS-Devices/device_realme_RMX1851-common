@@ -12,7 +12,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CAMERA" />
 	
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     <protected-broadcast android:name="com.realme.hub.CUST_UPDATE" />
 
     <uses-sdk
@@ -71,19 +70,6 @@
           </intent-filter>
         </receiver>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="RealmeDozeService">
-        </service>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.realme.hub.DOZE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
     </application>
 

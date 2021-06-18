@@ -29,7 +29,6 @@ import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 
 import com.realme.hub.settings.ScreenOffGestureSettings;
-import com.realme.hub.doze.DozeSettingsActivity;
 import com.realme.hub.vibration.VibratorStrengthPreference;
 
 import java.text.DateFormat;
@@ -49,7 +48,6 @@ public class RealmeHub extends PreferenceFragment implements
     private static final boolean DEBUG = true;
     private static final String TAG = "hub";
 
-    private Preference mDozePref;
     private Preference mGesturesPref;
     private Context mContext;
     private SharedPreferences mPreferences;
@@ -63,15 +61,6 @@ public class RealmeHub extends PreferenceFragment implements
                      @Override
                      public boolean onPreferenceClick(Preference preference) {
                          Intent intent = new Intent(getContext(), ScreenOffGestureSettings.class);
-                         startActivity(intent);
-                         return true;
-                     }
-                });
-	mDozePref = findPreference("doze");
-               mDozePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                     @Override
-                     public boolean onPreferenceClick(Preference preference) {
-                         Intent intent = new Intent(getContext(), DozeSettingsActivity.class);
                          startActivity(intent);
                          return true;
                      }

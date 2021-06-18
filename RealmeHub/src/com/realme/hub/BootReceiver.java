@@ -26,7 +26,6 @@ import android.content.SharedPreferences;
 import com.realme.hub.KernelControl;
 import com.realme.hub.settings.ScreenOffGesture;
 import com.realme.hub.util.Utils;
-import com.realme.hub.doze.DozeUtils;
 import com.realme.hub.vibration.VibratorStrengthPreference;
 import java.io.File;
 import androidx.preference.PreferenceManager;
@@ -60,7 +59,6 @@ public class BootReceiver extends BroadcastReceiver {
                         screenOffGestureSharedPreferences.getBoolean(
                         ScreenOffGesture.PREF_GESTURE_ENABLE, true));
         }
-		DozeUtils.checkDozeService(context);
                 VibratorStrengthPreference.restore(context);
     }
 
