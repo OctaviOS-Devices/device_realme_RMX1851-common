@@ -7,3 +7,7 @@ r_dir_file(system_app, sysfs_battery_supply)
 
 r_dir_file(system_app, proc_touchpanel);
 #r_dir_file(system_app, vibrator_sysfs);
+allow system_app sysfs:file { getattr };
+
+allow system_app sysfs_battery_supply:dir search;
+allow system_app sysfs_battery_supply:file r_file_perms;
