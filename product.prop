@@ -7,6 +7,11 @@ ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.log_stats=true
 
+# Octavi
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.octavi.status=2.6 Official
+    ro.octavi.maintainer=TheTablaster
+
 # Blur
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
