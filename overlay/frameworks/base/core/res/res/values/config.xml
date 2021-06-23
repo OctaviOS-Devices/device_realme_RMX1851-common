@@ -435,6 +435,13 @@
     <string name="config_smartChargingResumeValue" translatable="false">1</string>
 
     <!-- Enable Smart charging -->
-    <bool name="config_smartChargingAvailable">true</bool>       
+    <bool name="config_smartChargingAvailable">true</bool>
+
+
+    <!-- Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!-- Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>           
 
 </resources>
