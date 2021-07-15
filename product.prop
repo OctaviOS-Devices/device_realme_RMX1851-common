@@ -11,6 +11,7 @@ ro.lmk.log_stats=true
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.octavi.status=2.6 Official
     ro.octavi.maintainer=TheTablaster
+    ro.octavi.device.pling=https://www.pling.com/p/1490978/
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
